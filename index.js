@@ -1,5 +1,4 @@
 const fs = require("fs");
-const path = require("path");
 const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown");
 
@@ -62,14 +61,14 @@ const questions = [
 // function to write README file
 const writeToFile = data => {
   return new Promise((resolve, reject) => {
-    fs.writeFile('./README.md', data, err => {
+    fs.writeFile('./new-file/README.md', data, err => {
       if (err) {
         reject (err);
         return;
       }
       resolve({
         ok: true,
-        message: console.log('README has been written successfully!')
+        message: console.log('README has been written successfully! View it now in the new-file.')
       });
     })
   })

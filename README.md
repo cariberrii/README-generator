@@ -12,19 +12,19 @@
   * [Questions](#questions)
   
   ## Description
-  SHFOEIGHLSHLRG
+  This is a command-line application which quickly generates a professional README for a new project. 
 
   ## Installation
   npm install
 
   ## Usage
-  install dependencies
+  Install dependencies (Inquirer)
 
   ## License
   This project is covered under the MIT license. For more information, click on the license badge at the top of this file.
 
   ## Contributing
-  fork and pull request
+  Fork repo and generate a pull request.
 
   ## Tests
   npm test
