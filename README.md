@@ -1,16 +1,18 @@
-# erlah
+# README Generator
+  
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   
   ## Table of Contents
   * [Description](#description)
   * [Installation](#installation)
   * [Usage](#usage)
-  * [Licenses](#licenses)
+  * [License](#license)
   * [Contributing](#contributing)
   * [Tests](#tests)
   * [Questions](#questions)
   
   ## Description
-  short descri
+  SHFOEIGHLSHLRG
 
   ## Installation
   npm install
@@ -28,6 +30,6 @@
   npm test
 
   ## Questions
-  Get in touch with any questions about this project:
-  GitHub: https://github.com/undefined
-  Email: calsdfhe
+  Get in touch with any questions about this project!
+  GitHub: https://github.com/cariberrii
+  Email: ca.fillingham@gmail.com

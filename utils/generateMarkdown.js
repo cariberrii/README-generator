@@ -4,13 +4,13 @@
     return `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`
   }
   if (license === 'APACHE 2.0') {
-    return `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`
+    return `[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`
   }
   if (license === 'GPL 3.0') {
-    return `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`
+    return `[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)`
   }
   if (license === 'BSD 3') {
-    return `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`
+    return `[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)`
   }
   else {
     return ``;
@@ -20,12 +20,14 @@
 // function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
+
+  ${licenseBadge(data.license)}
   
   ## Table of Contents
   * [Description](#description)
   * [Installation](#installation)
   * [Usage](#usage)
-  * [Licenses](#licenses)
+  * [License](#license)
   * [Contributing](#contributing)
   * [Tests](#tests)
   * [Questions](#questions)
@@ -49,8 +51,10 @@ function generateMarkdown(data) {
   ${data.tests}
 
   ## Questions
-  Get in touch with any questions about this project:
+  Get in touch with any questions about this project!
+
   GitHub: https://github.com/${data.github}
+
   Email: ${data.email}
 `;
 }
