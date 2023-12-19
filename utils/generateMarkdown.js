@@ -1,4 +1,22 @@
- 
+ // function to generate license badge for user selection
+ function licenseBadge(license) {
+  if (license === 'MIT') {
+    return `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`
+  }
+  if (license === 'APACHE 2.0') {
+    return `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`
+  }
+  if (license === 'GPL 3.0') {
+    return `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`
+  }
+  if (license === 'BSD 3') {
+    return `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`
+  }
+  else {
+    return ``;
+  }
+ }
+
 // function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
@@ -11,7 +29,6 @@ function generateMarkdown(data) {
   * [Contributing](#contributing)
   * [Tests](#tests)
   * [Questions](#questions)
-  * [Credits](#credits)
   
   ## Description
   ${data.description}
