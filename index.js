@@ -1,4 +1,5 @@
 const fs = require("fs");
+const getDirName = require("path").dirname;
 const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown");
 
@@ -61,14 +62,14 @@ const questions = [
 // function to write README file
 const writeToFile = data => {
   return new Promise((resolve, reject) => {
-    fs.writeFile('./new-file/README.md', data, err => {
+    fs.writeFile('./utils/sampleREADME.md', data, err => {
       if (err) {
         reject (err);
         return;
       }
       resolve({
         ok: true,
-        message: console.log('README has been written successfully! View it now in the new-file.')
+        message: console.log('README has been written successfully! View it now in the utils folder.')
       });
     })
   })

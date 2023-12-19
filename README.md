@@ -12,7 +12,7 @@
   * [Questions](#questions)
   
   ## Description
-  This is a command-line application which quickly generates a professional README for a new project. 
+  This is a command-line application which quickly generates a professional README for a new project.
 
   ## Installation
   npm install
