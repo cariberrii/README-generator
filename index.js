@@ -60,10 +60,26 @@ const questions = [
 ];
 
 // function to write README file
-function writeToFile(fileName, data) {}
+const writeToFile = data => {
+  return new Promise((resolve, reject) => {
+    fs.writeFile('./README.md', data, err => {
+      if (err) {
+        reject (err);
+        return;
+      }
+      resolve({
+        ok: true,
+        message: console.log('README has been written successfully!')
+      });
+    })
+  })
+}
 
 // function to initialize program
 const init = () => inquirer.prompt(questions);
 
 // function call to initialize program
-init();
+init()
+.then(userInput => generateMarkdown(userInput))
+.then(readmeInfo => writeToFile(readmeInfo))
+.catch(err => console.log(err));
